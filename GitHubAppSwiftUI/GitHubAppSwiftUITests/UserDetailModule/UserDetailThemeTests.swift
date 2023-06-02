@@ -10,25 +10,25 @@ import XCTest
 
 final class UserDetailThemeTests: XCTestCase {
 
-//    func testDefaultTheme() {
-//        let theme = UserDetailInfoViewDefaultTheme()
-//        XCTAssertEqual(theme.hStackHeight, 22)
-//        XCTAssertEqual(theme.spacing, 16)
-//        XCTAssertEqual(theme.rightLabelTextColor, UIColor.darkGray)
-//        XCTAssertEqual(theme.rightLabelFont, .systemFont(ofSize: 14, weight: .regular))
-//        XCTAssertEqual(theme.leftLabelTextColor, UIColor.darkGray)
-//        XCTAssertEqual(theme.leftLabelFont, .systemFont(ofSize: 14, weight: .regular))
-//        XCTAssertEqual(theme.vStackViewSpacing, 6)
-//    }
-//
-//    func testRepoViewDefaultTheme() {
-//        let theme = RepoViewDefaultTheme()
-//        XCTAssertEqual(theme.titleLabelFont, .systemFont(ofSize: 14, weight: .semibold))
-//        XCTAssertEqual(theme.titleLabelTextColor, UIColor.black)
-//        XCTAssertEqual(theme.spacing, 16)
-//        XCTAssertEqual(theme.descriptionLabelFont, .systemFont(ofSize: 14, weight: .semibold))
-//        XCTAssertEqual(theme.descriptionLabelTextColor, UIColor.black)
-//        XCTAssertEqual(theme.hStackHeight, 22)
-//        XCTAssertEqual(theme.iconTintColor, UIColor.darkGray)
-//    }
+  func testUserInfoDefaultTheme() {
+         let theme = UserDetailInfoViewDefaultTheme()
+        XCTAssertEqual(theme.spacing, 4)
+        XCTAssertEqual(theme.rightLabelTextColor, .gray)
+        XCTAssertEqual(theme.rightLabelFont, .system(size: 14, weight: .regular))
+        XCTAssertEqual(theme.leftLabelTextColor, .gray)
+        XCTAssertEqual(theme.leftLabelFont, .system(size: 14, weight: .regular))
+  
+  }
+ 
+     func testRepoViewDefaultTheme() {
+         let theme = RepoViewDefaultTheme()
+        XCTAssertEqual(theme.titleLabelFont, .system(size: 16, weight: .bold))
+        XCTAssertEqual(theme.titleLabelTextColor, .black)
+        XCTAssertEqual(theme.vStackSpacing, 2)
+        XCTAssertEqual(theme.descriptionLabelFont, .system(size: 14, weight: .semibold))
+        XCTAssertEqual(theme.descriptionLabelTextColor, .black)
+        XCTAssertEqual(theme.iconTintColor, .gray)
+  
+  }
+  
 }
